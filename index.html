@@ -18,6 +18,58 @@
             <h1>Checkout form</h1>
             <p>Below is an example form built entirely with Bootstrap's form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
         </header>
+
+        <aside>
+            <div class="title-cart">
+                <h2>Your cart</h2>
+                <p>3</p>
+            </div>
+
+            <ul class="list-cart">
+                <li class="list-cart-item">
+                    <div>
+                        <h6>Product name</h6>
+                        <small>Brief description</small>
+                    </div>
+                    <span>$12</span>
+                </li>
+                <li class="list-cart-item">
+                    <div>
+                        <h6>Second product</h6>
+                        <small>Brief description</small>
+                    </div>
+                    <span>$8</span>
+                </li>
+                <li class="list-cart-item">
+                    <div>
+                        <h6>Third item</h6>
+                        <small>Brief description</small>
+                    </div>
+                    <span>$5</span>
+                </li>
+                <li class="list-cart-item">
+                    <div>
+                        <h6>Promo code</h6>
+                        <small>EXAMPLECODE</small>
+                    </div>
+                    <span>-$6</span>
+                </li>
+                <li class="list-cart-item">
+                    <h6>Total (USD)</h6>
+                    <span>$20</span>
+                </li>
+            </ul>
+
+            <form action="/" class="form-code">
+                <div class="input-promo">
+                    <input type="text" placeholder="Promo code" class="input-code">
+                    <div>
+                        <button type="submit" class="btn">Redeem</button>
+                    </div>
+                </div>
+            </form>
+        </aside>
+
     </div>
 </body>
 </html>
