@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-    max-width: 120rem;
+    max-width: 96rem;
     margin: 0 auto;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -43,7 +43,32 @@ header p {
     margin-bottom: 4rem;
 }
 
+.row-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .row-content {
+        flex-direction: row-reverse;
+    }
+}
+
 /* Aside */
+aside {
+    width: 100%;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    aside {
+        width: 35%;
+        padding-left: 1.5rem;
+    }
+}
+
 .title-cart {
     display: flex;
     justify-content: space-between;
@@ -72,6 +97,7 @@ header p {
     flex-direction: column;
     padding: 0;
     margin-bottom: 1rem;
+    margin-top: 0;
 }
 
 .list-cart-item {
@@ -130,7 +156,6 @@ header p {
 .form-code {
     margin-top: 1.7rem;
     display: flex;
-    justify-content: center;
     background-color: #fff;
     border-radius: 0.45rem;
     border: 1px solid #ced4da;
@@ -139,9 +164,7 @@ header p {
 
 .input-promo {
     display: flex;
-    justify-content: stretch;
-    flex-wrap: wrap;
-    align-self: stretch;
+    width: 100%;
 }
 
 .input-promo div {
@@ -149,8 +172,9 @@ header p {
 }
 
 .input-code {
-    display: block;
+    display: inline-block;
     font-size: 1.6rem;
+    width: 100%;
     color: #495057;
     border: 1px solid #ced4da;
     border-top-left-radius: 0.45rem;
@@ -167,6 +191,7 @@ header p {
 }
 
 .btn {
+    width: 100%;
     display: inline-block;
     color: #fff;
     background-color: #6c757d;
@@ -184,6 +209,18 @@ header p {
 }
 
 /* Main - form */
+main {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    main {
+        width: 65%;
+        padding-right: 1.5rem;
+        
+    }
+}
+
 main h2 {
     font-size: 2.5rem;
     font-weight: 400;
@@ -192,6 +229,30 @@ main h2 {
 .form-main {
     display: flex;
     flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .row {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .row-div-name {
+        margin-right: 1.5rem;
+        width: 50%;
+    }
+    .row-div-last {
+        margin-left: 1.5rem;
+        width: 50%;
+    }
+}
+
+.row .input {
+    margin-top: 1rem;
 }
 
 .form-main label {
@@ -255,6 +316,22 @@ main h2 {
     appearance: none;
 }
 
+@media (min-width:768px) {
+    .select-country {
+        width: 41%;
+        padding-right: 1.5rem;
+    }
+    .select-state {
+        width: 33%;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .select-zip {
+        max-width: 25%;
+        padding-left: 1.5rem;
+    }
+}
+
 hr {
     display: block;
     margin-top: 1.8rem;
@@ -278,7 +355,7 @@ hr {
     border: 1px solid #dee2e6;
     border-radius: 0.35em;
     vertical-align: baseline;
-    margin-top: 0.8rem;
+    margin-top: 0.5rem;
     margin-right: .5rem;
 }
 
@@ -309,6 +386,49 @@ hr {
 
 .name-card-content {
     margin-top: 2.5rem;
+    width: 100%;
+}
+
+.card-number {
+    margin-top: 2.3rem;
+    width: 100%;
+}
+
+@media (min-width:768px) {
+    .name-card-content {
+        margin-right: 1.5rem;
+    }
+    .card-number {
+        margin-left: 1.5rem;
+    }
+}
+
+.row-expiration-cvv {
+    display: flex;
+    flex-direction: column;
+}
+
+.expiration {
+    width: 100%;
+}
+
+.cvv {
+    width: 100%;
+}
+
+@media (min-width:768px) {
+    .row-expiration-cvv {
+        flex-direction: row;
+    }
+    .expiration {
+        width: 21%;
+        margin-right: 1.5rem;
+    }
+    .cvv {
+        width: 19%;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
 }
 
 .name-card-content .input {
@@ -318,7 +438,7 @@ hr {
 .name-card-content small {
     display: inline-block;
     font-size: 1.2rem;
-    margin-bottom: 1.8rem;
+    margin-bottom: 1.5rem;
 }
 
 .btn-form {
@@ -331,7 +451,7 @@ hr {
     background-color: #007bff;
     border-color: #007bff;
     border-radius: 0.45rem;
-    padding: 1rem;
+    padding: 1.3rem;
 }
 
 .btn-form:hover {

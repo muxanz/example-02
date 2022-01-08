@@ -18,147 +18,169 @@
             <h1>Checkout form</h1>
             <p>Below is an example form built entirely with Bootstrap's form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
         </header>
-
-        <aside>
-            <div class="title-cart">
-                <h2>Your cart</h2>
-                <p>3</p>
-            </div>
-
-            <ul class="list-cart">
-                <li class="list-cart-item">
-                    <div>
-                        <h6>Product name</h6>
-                        <small>Brief description</small>
-                    </div>
-                    <span>$12</span>
-                </li>
-                <li class="list-cart-item">
-                    <div>
-                        <h6>Second product</h6>
-                        <small>Brief description</small>
-                    </div>
-                    <span>$8</span>
-                </li>
-                <li class="list-cart-item">
-                    <div>
-                        <h6>Third item</h6>
-                        <small>Brief description</small>
-                    </div>
-                    <span>$5</span>
-                </li>
-                <li class="list-cart-item">
-                    <div>
-                        <h6>Promo code</h6>
-                        <small>EXAMPLECODE</small>
-                    </div>
-                    <span>-$6</span>
-                </li>
-                <li class="list-cart-item">
-                    <h6>Total (USD)</h6>
-                    <span>$20</span>
-                </li>
-            </ul>
-
-            <form action="/" class="form-code">
-                <div class="input-promo">
-                    <input type="text" placeholder="Promo code" class="input-code">
-                    <div>
-                        <button type="submit" class="btn">Redeem</button>
-                    </div>
+        <div class="row-content">
+            <aside>
+                <div class="title-cart">
+                    <h2>Your cart</h2>
+                    <p>3</p>
                 </div>
-            </form>
-        </aside>
-
-        <main class="main">
-            <h2>Billing address</h2>
-            <form action="/" class="form-main">
-                <label for="first-name">First name</label>
-                <input type="text" id="first-name" class="input">
-
-                <label for="last-name">Last name</label>
-                <input type="text" id="last-name" class="input">
-
-                <label for="user-name">Username</label>
-                <div class="user-name">
-                    <span class="arroba">@</span>
-                    <input type="text" id="user-name" placeholder="Username" class="input">
-                </div>
-
-                <label for="email">Email<small> (Opcional)</small></label>
-                <input type="email" id="email" placeholder="you@example.com" class="input">
-
-                <label for="address">Address</label>
-                <input type="text" id="address" placeholder="1234 Main St" class="input">
-
-                <label for="address-two">Address 2<small> (Opcional)</small></label>
-                <input type="text" id="address-two" placeholder="Apartment or suite" class="input">
-
-                <label for="country">Country</label>
-                <select id="country" required class="input input-select">
-                    <option value="Choose...">Choose...</option>
-                    <option value="United States">United States</option>
-                    <option value="Colombia">Colombia</option>
-                </select>
-
-                <label for="state">State</label>
-                <select id="state" required class="input input-select">
-                    <option value="Choose...">Choose...</option>
-                    <option value="California">California</option>
-                    <option value="Colombia">Bogotá</option>
-                </select>
-
-                <label for="zip">Zip</label>
-                <input type="text" id="zip" required class="input">
-
-                <hr>
-                <div class="check-group">
-                    <div class="check">
-                        <input type="checkbox" id="check-address" class="form-check">
-                        <label for="check-address">Shipping address is the same as my billing address</label>
+    
+                <ul class="list-cart">
+                    <li class="list-cart-item">
+                        <div>
+                            <h6>Product name</h6>
+                            <small>Brief description</small>
+                        </div>
+                        <span>$12</span>
+                    </li>
+                    <li class="list-cart-item">
+                        <div>
+                            <h6>Second product</h6>
+                            <small>Brief description</small>
+                        </div>
+                        <span>$8</span>
+                    </li>
+                    <li class="list-cart-item">
+                        <div>
+                            <h6>Third item</h6>
+                            <small>Brief description</small>
+                        </div>
+                        <span>$5</span>
+                    </li>
+                    <li class="list-cart-item">
+                        <div>
+                            <h6>Promo code</h6>
+                            <small>EXAMPLECODE</small>
+                        </div>
+                        <span>-$6</span>
+                    </li>
+                    <li class="list-cart-item">
+                        <h6>Total (USD)</h6>
+                        <span>$20</span>
+                    </li>
+                </ul>
+    
+                <form action="/" class="form-code">
+                    <div class="input-promo">
+                        <input type="text" placeholder="Promo code" class="input-code">
+                        <div>
+                            <button type="submit" class="btn">Redeem</button>
+                        </div>
+                    </div>
+                </form>
+            </aside>
+    
+            <main class="main">
+                <h2>Billing address</h2>
+                <form action="/" class="form-main">
+                    <div class="row">
+                        <div class="row-div-name">
+                            <label for="first-name">First name</label>
+                            <input type="text" id="first-name" class="input">
+                        </div>
+                        <div class="row-div-last">
+                            <label for="last-name">Last name</label>
+                            <input type="text" id="last-name" class="input">
+                        </div>
                     </div>
     
-                    <div class="check">
-                        <input type="checkbox" id="check-info" class="form-check">
-                        <label for="check-info">Save this information for next time</label>
+                    <label for="user-name">Username</label>
+                    <div class="user-name">
+                        <span class="arroba">@</span>
+                        <input type="text" id="user-name" placeholder="Username" class="input">
                     </div>
-                </div>
+    
+                    <label for="email">Email<small> (Opcional)</small></label>
+                    <input type="email" id="email" placeholder="you@example.com" class="input">
+    
+                    <label for="address">Address</label>
+                    <input type="text" id="address" placeholder="1234 Main St" class="input">
+    
+                    <label for="address-two">Address 2<small> (Opcional)</small></label>
+                    <input type="text" id="address-two" placeholder="Apartment or suite" class="input">
+    
 
-                <hr>
-
-                <h2>Payment</h2>
-                <div class="radio">
-                    <input type="radio" name="payment" id="credit-card" class="form-check" required checked>
-                    <label for="credit-card">Credit card</label>
-                </div>
-                <div class="radio">
-                    <input type="radio" name="payment" id="debit-card" class="form-check">
-                    <label for="debit-card">Debit card</label>
-                </div>
-                <div class="radio">
-                    <input type="radio" name="payment" id="paypal" class="form-check">
-                    <label for="paypal">Paypal</label>
-                </div>
-
-                <div class="name-card-content">
-                    <label for="name-on-card" class="label-card">Name on card</label>
-                    <input type="text" id="name-on-card" class="input">
-                    <small>Full name as displayed on card</small>
-                </div>                
-                    <label for="card-number">Credit card number</label>
-                    <input type="text" id="card-number" class="input">
-
-                    <label for="card-expiration">Expiration</label>
-                    <input type="text" id="card-expiration" class="input">
-
-                    <label for="card-cvv">CVV</label>
-                    <input type="text" id="card-cvv" class="input">
-
+                    <div class="row">
+                        <div class="select-country">
+                            <label for="country">Country</label>
+                            <select id="country" required class="input input-select">
+                                <option value="Choose...">Choose...</option>
+                                <option value="United States">United States</option>
+                                <option value="Colombia">Colombia</option>
+                            </select>
+                        </div>
+                        <div class="select-state">
+                            <label for="state">State</label>
+                            <select id="state" required class="input input-select">
+                                <option value="Choose...">Choose...</option>
+                                <option value="California">California</option>
+                                <option value="Colombia">Bogotá</option>
+                            </select>
+                        </div>    
+                        <div class="select-zip">
+                            <label for="zip">Zip</label>
+                            <input type="text" id="zip" required class="input">
+                        </div>
+                    </div>
+    
                     <hr>
 
-                    <button type="submit" class="btn btn-form">Continue to checkout</button>
-            </form>
-        </main>
+                    <div class="check-group">
+                        <div class="check">
+                            <input type="checkbox" id="check-address" class="form-check">
+                            <label for="check-address">Shipping address is the same as my billing address</label>
+                        </div>
+        
+                        <div class="check">
+                            <input type="checkbox" id="check-info" class="form-check">
+                            <label for="check-info">Save this information for next time</label>
+                        </div>
+                    </div>
+    
+                    <hr>
+    
+                    <h2>Payment</h2>
+                    <div class="radio">
+                        <input type="radio" name="payment" id="credit-card" class="form-check" required checked>
+                        <label for="credit-card">Credit card</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="payment" id="debit-card" class="form-check">
+                        <label for="debit-card">Debit card</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="payment" id="paypal" class="form-check">
+                        <label for="paypal">Paypal</label>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="name-card-content">
+                            <label for="name-on-card" class="label-card">Name on card</label>
+                            <input type="text" id="name-on-card" class="input">
+                            <small>Full name as displayed on card</small>
+                        </div>
+                        <div class="card-number">
+                            <label for="card-number">Credit card number</label>
+                            <input type="text" id="card-number" class="input">
+                        </div>
+                    </div>
+
+                    <div class="row-expiration-cvv">
+                        <div class="expiration">
+                            <label for="card-expiration">Expiration</label>
+                            <input type="text" id="card-expiration" class="input">
+                        </div>
+                        <div class="cvv">
+                            <label for="card-cvv">CVV</label>
+                            <input type="text" id="card-cvv" class="input">
+                        </div>
+                    </div>
+                        <hr>
+    
+                        <button type="submit" class="btn btn-form">Continue to checkout</button>
+                </form>
+            </main>
+        </div>
 
         <footer class="footer">
             <p>© 2017-2018 Company Name</p>
